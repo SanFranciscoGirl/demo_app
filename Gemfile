@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '1.9.3'
 
-gem 'rails', '4.0.1'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,15 +13,15 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '4.0.1'
-  gem 'coffee-rails', '4.0.1'
-  gem 'turbolinks', '1.1.1'
-  gem 'jbuilder', '1.0.2'
+  gem 'sass-rails',   '<=4.0.1'
+  gem 'coffee-rails', '<=4.0.1'
+  gem 'turbolinks', '1.3.1'
+  gem 'jbuilder', '1.5.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '2.1.1'
+  gem 'uglifier', '2.3.1'
 end
 
 gem 'jquery-rails', '3.0.4'
@@ -46,6 +46,6 @@ group :doc do
 end
 
 group :production do
-	gem 'pg', '0.15.1'
+	gem 'pg', '0.17.0'
 	gem 'rails_12factor', '0.0.2'
 end
